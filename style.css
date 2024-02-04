@@ -1,0 +1,26 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  min-height: 100vh;
+}
+.img{
+  display: flex;
+  justify-content: space-evenly;
+  -webkit-box-reflect: below 8px linear-gradient(transparent,transparent,#0004);
+}.img img{
+  transform: perspective(900px) rotatey(40deg);
+  transition: 0.3s;
+  box-shadow: 0px 0px 8px grey;
+  border-radius: 5px;
+  height: 200px;
+  width: 300px;
+}
+.img:hover img{
+  opacity: 0.3;
+}
+.img img:hover {
+  transform: perspective(800px) rotateY(0deg);
+  opacity: 1;
+}
